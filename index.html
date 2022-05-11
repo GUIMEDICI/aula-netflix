@@ -4,18 +4,35 @@
 <head>
     <meta charset="UTF-8"> <!--O charset com valor UTF8 é o padrão compatível com acentuação-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--customiza a resolução inicial que o browser deve renderizar do viewport do dispositivo. Dessa forma, podemos preparar websites com resoluções personalizadas para smartphones e outros aparelhos.-->
+
     <link rel="stylesheet" href="/style/header.css">
-    <title>NETFLIX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>OLDFLIX</title>
 </head>
 
 <body>
     <header class="header">
-            <h1>NETFLIX</h1>
-                <a href="#">TV Shows</a>
+            <h1>OLDFLIX</h1>
                 <a href="#">Movies</a>
+                <a href="#">Tv Shows</a>
                 <a href="#">Recently Added</a>
                 <a href="#">My List</a>
     </header>
+    <main class="cards">
+        <div class="top-movies">
+        <h2>Top Movies</h2>
+        <img src="/img/dumbo.jpg">
+        <img src="/img/fantasticvoyage.jpg">
+        <img src="/img/fieldofdreams.jpg">
+        <img src="/img/jamesbond.jpg">
+        <img src="/img/patton.jpg">    
+        </div>
+        <div>
+        <h2 class="recently">Recently Added</h2>
+        </div>
+    </main>
 </body>
 
 </html>
