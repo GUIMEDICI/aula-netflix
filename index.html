@@ -2,10 +2,14 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8"> <!--O charset com valor UTF8 é o padrão compatível com acentuação-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--customiza a resolução inicial que o browser deve renderizar do viewport do dispositivo. Dessa forma, podemos preparar websites com resoluções personalizadas para smartphones e outros aparelhos.-->
+    <meta charset="UTF-8">
+    <!--O charset com valor UTF8 é o padrão compatível com acentuação-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--customiza a resolução inicial que o browser deve renderizar do viewport do dispositivo. Dessa forma, podemos preparar websites com resoluções personalizadas para smartphones e outros aparelhos.-->
 
-    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -14,25 +18,73 @@
 
 <body>
     <header class="header">
-            <h1>OLDFLIX</h1>
-                <a href="#">Movies</a>
-                <a href="#">Tv Shows</a>
-                <a href="#">Recently Added</a>
-                <a href="#">My List</a>
+        <h1>OLDFLIX</h1>
+        <a href="#">Movies</a>
+        <a href="#">Tv Shows</a>
+        <a href="#">Recently Added</a>
+        <a href="#">My List</a>
     </header>
+
     <main class="cards">
-        <div class="top-movies">
-        <h2>Top Movies</h2>
-        <img src="/img/dumbo.jpg">
-        <img src="/img/fantasticvoyage.jpg">
-        <img src="/img/fieldofdreams.jpg">
-        <img src="/img/jamesbond.jpg">
-        <img src="/img/patton.jpg">    
+        <div class="movies">
+            <h2>Movies</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="/img/dumbo.jpg">
+                </div>
+                <div class="item">
+                    <img src="/img/fantasticvoyage.jpg" alt="Fantasticvoyage">
+                </div>
+                <div class="item">
+                    <img src="/img/fieldofdreams.jpg" alt="fieldofdreams">
+                </div>
+                <div class="item">
+                    <img src="/img/jamesbond.jpg" alt="jamesbond">
+                </div>
+                <div class="item">
+                    <img src="/img/patton.jpg" alt="patton">
+                </div>
+                <div class="item">
+                    <img src="/img/dracula.jpg" alt="dracula">
+                </div>
+                <div class="item">
+                    <img src="/img/frankenstein.jpg" alt="frankenstein">
+                </div>
+            </div>
         </div>
         <div>
-        <h2 class="recently">Recently Added</h2>
+            <h2 class="recently">Recently Added</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="/img/starwarsesb.jpg">
+                </div>
+                <div class="item">
+                    <img src="/img/theendlesssummer.jpg">
+                </div>
+                <div class="item">
+                    <img src="/img/thetpott.jpg">
+                </div>
+                <div class="item">
+                    <img src="/img/truegrit.jpg">
+                </div>
+                <div class="item">
+                    <img src="/img/yankeedd.jpg">
+                </div>
+                <div class="item">
+                    <img src="/img/TheBirds.jpg">
+                </div>
+                <div class="item">
+                    <img src="/img/PosterTheExorcist.jpg">
+                </div>
+            </div>
         </div>
     </main>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/setup.js"></script>
+
+
 </body>
 
 </html>
